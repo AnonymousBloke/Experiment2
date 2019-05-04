@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int demandcharge, latecharge;
+double chargepergal, pgal, rgal, usedgal, bill0, bill1, unpaidbal;
+
+cout << "Enter Gallons Used Previous Month: "; cin >> pgal;
+cout << "Enter Gallons Used This Month: "; cin >> rgal;
+cout << "Enter Unpaid Balance: "; cin >> unpaidbal;
+
+demandcharge = 35;
+latecharge = 20;
+chargepergal = 1.10;
+usedgal = rgal - pgal;
+bill0 = demandcharge + (chargepergal * (usedgal));
+bill1 = ((usedgal) * chargepergal) + demandcharge + latecharge + unpaidbal;
+
+if (unpaidbal < 1)
+cout << "Your Water Bill is: " << bill0 << endl;
+else
+cout << "Your Water Bill is: " << bill1 << endl;
+
+	
+	
+return 0;
+}
