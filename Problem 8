@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int counter;
+double num;
+cout << "Enter A Number: "; cin >> num;
+cout << "Multiplication Number of: " << num << endl;
+counter = 1;
+while (counter<=10)
+{
+
+cout << "" << counter << " * " << num << " = " << counter * num << endl;
+
+counter++;
+}
+
+    return 0;
+}
