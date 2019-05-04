@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+int r, row, c, column;
+char anychar;
+
+	cout << "Enter Number of Rows: "; cin >> row;
+	cout << "Enter Number of Columns: "; cin >> column;
+	cout << "Enter Desired Character: "; cin >> anychar;
+	
+	r = 1;
+	for (r = 1; r <= row; r++)
+	{
+		for (c = 1; c <= column; c++)
+		{
+			cout << anychar << "";
+		}
+		
+		cout << "\n";
+	}
+
+	return 0;
+}
