@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int i, num, counter;
+cout << "Counting..." << endl;
+
+for (counter=1;counter <= 30;counter++)
+{
+if (counter < 10)
+{
+cout << counter << ", ";
+}
+else
+{
+cout << counter << ", ";
+counter++;
+}
+}
+    return 0;
+}
