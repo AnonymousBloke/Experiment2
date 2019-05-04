@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int num, sum;
+
+while (num > 0)
+{
+cout << "Enter A Number: "; cin >> num;
+if (num > 0)
+{
+sum = (num * (num + 1)) / 2;
+cout << "The sum of all whole numbers from 1 to " << num << " is equal to " << sum << endl;
+continue;
+}
+else 
+{
+cout << "Thank You!" << endl;
+}
+}
+    return 0;
+}
