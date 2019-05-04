@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int hours;
+char pack;
+cout << "Enter Your Subscription Package (A/B/C): "; cin >> pack;
+cout << "Enter Hours Used: "; cin >> hours;
+switch (pack)
+{
+    case 'A':
+	case 'a':
+    if (hours > 10)
+    cout << "Your Monthly Bill Is: " << (20 * (hours - 10)) + 995 << endl;
+    else
+    cout << "Your Monthly Bill Is: " << 995 << endl;
+    break;
+    
+    case 'B':
+    case 'b':
+    if (hours > 20)
+    cout << "Your Monthly Bill Is: " << (10 * (hours - 20)) + 1495 << endl;
+    else 
+    cout << "Your Monthly Bill Is: " << 1495 << endl;
+    break;
+    
+    case 'C':
+    case 'c':
+    cout << "Your Monthly Bill Is: " << 1995 << endl;
+    break;
+    
+    default:
+    cout << "Choose a Monthly Subscription Package";
+
+}
+    return 0;
+}
